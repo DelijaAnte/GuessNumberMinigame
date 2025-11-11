@@ -9,6 +9,7 @@ import GameOverScreen from "./screens/GameOverScreen";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import Colors from "./constants/colors";
 import * as SplashScreen from "expo-splash-screen";
+import { Ionicons } from "@expo/vector-icons";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -17,6 +18,7 @@ export default function App() {
   const [gameIsOver, setGameIsOver] = useState(true);
   const [roundsNumber, setRoundsNumber] = useState(0);
   const [fontsLoaded] = useFonts({
+    ...Ionicons.font,
     "open-sans": require("./assets/fonts/OpenSans-Regular.ttf"),
     "open-sans-bold": require("./assets/fonts/OpenSans-Bold.ttf"),
   });
