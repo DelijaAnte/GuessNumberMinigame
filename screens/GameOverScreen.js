@@ -5,7 +5,7 @@ import PrimaryButton from "../components/ui/PrimaryButton";
 function GameOverScreen({ roundsNumber, userNumber, onStartNewGame }) {
   return (
     <View style={styles.screen}>
-      <Title>GAME OVER!</Title>
+      <Title>GAME OVER!!</Title>
       <View style={styles.imageContainer}>
         <Image source={require("../assets/success.png")} style={styles.image} />
       </View>
